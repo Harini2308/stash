@@ -24,23 +24,23 @@ public class ArraySubset {
 		}
 		if(Subset(a,b))
 		{
-			System.out.print("Array 2 is subset of array1");
+			System.out.print("Array 1 is subset of array2");
 		}
 		else{
-			System.out.println("Array2 is not subset of array1");
+			System.out.println("Array 1 is not subset of array2");
 		}
 	}
 	public static boolean Subset(int[] a,int[] b)
 	{
-		for(int i=0;i<b.length;i++)
+		for(int i=0;i<a.length;i++)
 		{
-			for(int j=0;j<a.length;j++)
+			for(int j=0;j<b.length;j++)
 			{
-				if(b[i]==a[j])
+				if(a[i]==b[j])
 				{
 					break;
 				}
-				if(j==b.length)
+				if(j==a.length)
 				return false;
 			}
 			
